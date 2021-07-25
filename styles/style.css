@@ -6,10 +6,19 @@ body{
     margin: 0;
 }
 
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
 /* ----------------------------styling first section----------------------------  */
 
 .first-section{
     background-color: #2D25A0;
+    width: 100%;
 }
 .landing-page{
     display: flex;
@@ -56,7 +65,40 @@ a i{
 
 /* -------------------------------------styling second section-------------------------------- */
 
+.second-section{
+    width: 1050px;
+    margin-top: 70px;
+    padding-right: 80px;
+}
 .second-section .players{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 27px;
+}
+.players .player{
+    width: 330px;
+    padding: 15px;
+    text-align: justify;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.player .player-description:hover{
+    background-color: rgba(182, 250, 137, 0.603);
+    transform: scale(1.050);
+    transition: transform 1s ease-in 0s;
+}
+.player-description .player-name{
+    color: #18191F;
+    font-size: 28px;
+    font-family: 700;
+    margin-top: 16px;
+    margin-bottom: 10px;
+}
+.player-description .player-info{
+    color: #6C6C6C;
+    font-size: 16px;
+}
+.player .player-img img{
+    width: 100%;
 }

@@ -260,6 +260,14 @@ li a{
         width: 100%;
     }
     .last-section{
-        display: none;
+        width: 80%;
+        margin-top: 43px;
+        margin-bottom: 157px;
+        align-items: center;
+        padding-left: 28px;
+        padding-right: 71px;
+    }
+    .last-section .footer-img img{
+        width: 100%;
     }
 }

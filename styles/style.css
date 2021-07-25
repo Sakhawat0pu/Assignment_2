@@ -57,7 +57,6 @@ li a{
 }
 .landing-page .description{
     width: 50%;
-    height: 320px;
     padding-top: 121px;
     padding-left: 155px;
     padding-bottom: 169px; 
@@ -71,7 +70,7 @@ li a{
 }
 .first-section .caption{
     color: #FFFFFF;
-    width: 485px;
+    width: 100%;
     font-size: 64px;
     font-weight: 700;
     margin-bottom: 27px;
@@ -93,7 +92,7 @@ li a{
     width: 556.01px;
 }
 
-/* -------------------------------------styling second section-------------------------------- */
+/* -----------------------------styling second section--------------------------- */
 
 .second-section{
     width: 1050px;
@@ -107,7 +106,7 @@ li a{
     grid-row-gap: 27px;
 }
 .players .player{
-    width: 330px;
+    /* width: 330px; */
     padding: 15px;
     text-align: justify;
     background-color: #FFFFFF;
@@ -141,11 +140,11 @@ li a{
 .highlights{
     display: flex;
     align-items: center;
-    padding-right: 126px;
+    padding-right: 160px;
     padding-left: 160px;
 }
 .highlights .title-and-description{
-    padding-right:66px;
+    padding-right: 66px;
 }
 .title-and-description .title{
     font-size: 48px;
@@ -155,9 +154,9 @@ li a{
 .title-and-description .highlights-description{
     color: #6C6C6C;
     font-size: 16px;
+    text-align: justify;
     margin-top: 0px;
     margin-bottom: 24px;
-    
 }
 .cover-img img{
     width: 567px;
@@ -188,3 +187,79 @@ li a{
     font-size: 18px;
 }
 
+
+/* -----------------------------------Media Queries------------------------------ */
+
+@media only screen and (max-width: 688px) {
+    .computer-and-tablet{
+        display: none;
+    }
+    .first-section, .second-section, .third-section, .last-section{
+        width: 100%;
+    }
+    .landing-page{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .landing-page .description{
+        width: 100%;
+        padding-top: 52px;
+        padding-left: 16px;
+        padding-right: 66px;
+        padding-bottom: 50px;
+    }
+    .description .caption{
+        width:100%;
+        font-size: 36px;
+    }
+    .landing-page .logo{
+        width: 329px;
+        padding-top: 0px;
+        padding-left: 15px;
+        padding-right: 25px;
+        padding-bottom: 62px;
+    }
+    .landing-page .logo img{
+        width: 100%;
+    }
+    .second-section{
+        margin-top: 47px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .second-section .players{
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 30px;
+        grid-row-gap: 24px;
+        padding-right: 15px;
+        padding-left: 15px
+    }
+    .third-section{
+        margin-top: 60px;
+    }
+    .highlights{
+        flex-direction: column;
+        align-items: flex-start;
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+    .highlights .title-and-description{
+        width: 100%;
+        margin-bottom: 29px;
+        padding-right: 0px;
+    }
+    .highlights .title-and-description h2{
+        font-size: 30px;
+        margin-top: 0px;
+    } 
+    .highlights .title-and-description .highlights-description{
+        text-align: justify;
+    }
+    .highlights .cover-img img{
+        width: 100%;
+    }
+    .last-section{
+        display: none;
+    }
+}

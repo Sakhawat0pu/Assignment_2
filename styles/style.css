@@ -97,7 +97,6 @@ li a{
 .second-section{
     width: 1050px;
     margin-top: 70px;
-    padding-right: 80px;
 }
 .second-section .players{
     display: grid;
@@ -141,7 +140,7 @@ li a{
     display: flex;
     align-items: center;
     padding-right: 160px;
-    padding-left: 160px;
+    padding-left: 180px;
 }
 .highlights .title-and-description{
     padding-right: 66px;
